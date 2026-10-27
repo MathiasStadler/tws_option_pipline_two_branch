@@ -999,7 +999,7 @@ def process_symbol(symbol, month_indices, exchange, currency, client_id, keep_co
             return {'symbol': symbol, 'error': f'Failed to connect to IBKR (clientId={client_id})'}
 
         # Paper Account: Delayed-Frozen Market Data (Type 4) aktivieren
-        ib.reqMarketDataType(4)
+        ib.reqMarketDataType(1)
         logger.info("Market data type set to 4 (delayed-frozen)")
 
         stock, chain, _ = get_stock_and_chain(ib, symbol, month_indices[0], exchange, currency)
@@ -1326,7 +1326,8 @@ def write_master_html(results, filepath):
 
 
 def main():
-    default_symbols = ['CROX', 'AAPL', 'TREX', 'TSLA', 'NVDA']
+    # default_symbols = ['CROX', 'AAPL', 'TREX', 'TSLA', 'NVDA']
+    default_symbols = ['CROX', 'TREX']
     default_month_indices = [0, 1, 2]
     
     # Argument parsing

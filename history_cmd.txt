@@ -1,0 +1,23 @@
+1973  python3 src/multi_symbol_batch.py ZIM --chains 3 -m --ot REL 0 1 SMART USD
+ 1974  cd ..
+ 1975  python3 src/multi_symbol_batch.py ZIM --chains 3 -m --ot REL 0 1 SMART USD
+ 1976  python3 src/multi_symbol_batch.py CSX --chains 3 -m --ot REL 0 1 SMART USD
+ 1977  python3 src/multi_symbol_batch.py MDLZ --chains 3 -m --ot REL 0 1 SMART USD
+ 1978  python3 src/multi_symbol_batch.py ZIM --chains 3 --dmin -0.50 --dmax -0.01 --bid-min 0.01 --bracket -m 0 1 SMART USD
+ 1979  python3 src/multi_symbol_batch.py TREX --chains 3 --dmin -0.50 --dmax -0.01 --bid-min 0.01 --bracket -m 0 1 SMART USD
+ 1980  python3 src/multi_symbol_batch.py ZIM --chains 3 --dmin -0.50 --dmax -0.01 --bid-min 0.01 --bracket -m 0 1 SMART USD
+ 1981  python3 src/multi_symbol_batch.py ZIM --chains 3 --dmin -0.30 --dmax -0.10 --bid-min 0.01 --bracket -m 0 1 SMART USD
+ 1982  python3 src/multi_symbol_batch.py ZIM --chains 5 --dmin -0.30 --dmax -0.10 --bid-min 1.00 --bracket -m 0 1 SMART USD
+ 1983  python3 src/multi_symbol_batch.py crox --chains 5 --dmin -0.30 --dmax -0.10 --bid-min 1.00 --bracket -m 0 1 SMART USD
+ 1984  python3 src/multi_symbol_batch.py crox --chains 5 --dmin -0.10 --dmax -0.30 --bid-min 1.00 --bracket -m 0 1 SMART USD
+ 1985  cat /home/hermes/tws_option_pipline_two-1/output/multi_symbol_top5_20261020_190853.csv
+ 1986  python3 src/multi_symbol_batch.py crox --chains 5 --dmin -0.10 --dmax -0.50 --bid-min 1.00 --bracket -m 0 1 SMART USD
+ 1987  python3 src/multi_symbol_batch.py MDLZ --chains 3 -m --ot REL 0 1 SMART USD
+ 1988  python3 src/multi_symbol_batch.py ZIM --chains 3 --dmin -0.50 --dmax -0.01 --bid-min 0.01 --bracket -m 0 1 SMART USD
+ 1989  python3 src/multi_symbol_batch.py ZIM --chains 3 --dmin -0.50 --dmax -0.01 --bid-min 0.01  -m 0 1 SMART USD
+ 1990  python3 src/multi_symbol_batch.py MDLZ --chains 3 --dmin -0.50 --dmax -0.01 --bid-min 0.01  -m 0 1 --ot MKT SMART USD
+ 1991  python3 src/multi_symbol_batch.py MDLZ --chains 3 --dmin -0.50 --dmax -0.01 --bid-min 0.01  -m 0 1 --ot REL SMART USD
+ 1992  python3 src/multi_symbol_batch.py ELF --chains 5 --dmin -0.50 --dmax -0.10 --bid-min 0.01  -m 0 1 --ot REL SMART USD
+ 1993  python3 src/multi_symbol_batch.py ELF --dmax -0.20 --bracket -m --chains 3 0 1 SMART USD
+ 1994  python3 src/multi_symbol_batch.py ELF --dmin -0.25 --dmax -0.15 --bracket -m 0 1 SMART USD
+ 1995  python3 src/multi_symbol_batch.py ELF --bracket -m 0 1 SMART USD
